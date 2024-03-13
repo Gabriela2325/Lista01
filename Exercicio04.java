@@ -5,6 +5,8 @@ public class Exercicio04 {
 
     public static void executar() {
 
+        System.out.println("Exercicio04: ");
+
         double num1 = Prompt.lerDecimal("Digite o 1° número:");
 
         double num2 = Prompt.lerDecimal("Digite o 2° número:");
@@ -16,6 +18,7 @@ public class Exercicio04 {
         System.out.println(" A Multiplicação dos dois números é : " + (num1 * num2));
 
         System.out.println(" A Divisão dos dois números é : " + (num1 / num2));
+
 
     }
 
