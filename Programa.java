@@ -59,7 +59,11 @@ public class Programa {
             case 18:
                 Exercicio18.executar();
                 break;
-                
+
+            case 19:
+                Exercicio19.executar();
+                break;
+
             default:
                 System.out.println("Exercício não encontrado!");
                 break;
