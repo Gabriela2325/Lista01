@@ -3,9 +3,11 @@ public class Exercicio13 {
 
         System.out.println("Exercicio13");
 
-        //13. Escreva um algoritmo que leia valores REAIS nas variáveis A e B e o tipo 
-        //de operador em outra variável do tipo CARACTERE.
-        // Imprima o resultado da operação
+        //13. Escreva um algoritmo que leia valores REAIS nas variáveis A e B e
+        // o tipo deoperador em outra variável do tipo CARACTERE. Imprima o resultado da operaçãode A    
+        //por B se o operador aritmético for válido; caso contrário deve ser impresso 
+        //umamensagem de operador não definido. Tratar erro de divisão por zero.
+
 
         double A = Prompt.lerDecimal("Digite o primeiro valor:");
 
@@ -22,12 +24,16 @@ public class Exercicio13 {
                 System.out.println("Resultado da subtração é: " + (A - B));
                 break;
 
-            case "* ":
+            case "*":
                 System.out.println("Resultado da Multiplicação é: " + (A * B));
                 break;
 
-            case "/ ":
-                System.out.println("Resultado da divisão é: " + (A / B));
+            case "/":
+                 if (B != 0) {
+                        System.out.println("Resultado da divisão é: " + (A / B));
+                    } else {
+                        System.out.println("Erro: divisão por zero!");
+                    }
                 break;
 
             default:
